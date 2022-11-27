@@ -1,3 +1,1 @@
-import * as event from "./event";
-
-// Put your code here
+import splits from "./modules/splits"
