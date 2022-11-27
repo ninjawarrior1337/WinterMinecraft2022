@@ -524,7 +524,7 @@ declare namespace peripheral {
     function getName(peripheral: IPeripheral): string;
     function call(side: string, method: string, ...args: any[]): LuaMultiReturn<[...any[]]>;
     function wrap(name: string): IPeripheral;
-    function find(type: string, filter?: (peripheral: IPeripheral) => boolean): LuaMultiReturn<[...IPeripheral[]]>;
+    function find(type: string, filter?: (name: string, peripheral: IPeripheral) => boolean): LuaMultiReturn<[...IPeripheral[]]>;
 }
 /** @noSelf **/
 declare namespace pocket {

@@ -1,4 +1,5 @@
 import * as event from "../event";
+import {findSlot} from "../lib"
 
 // Put your code here
 
@@ -8,15 +9,6 @@ const getAllPeripheral = (name: string) => {
 
 const input = peripheral.wrap("minecraft:barrel_0") as InventoryPeripheral
 const outputs = getAllPeripheral("millstone")
-
-const findSlot = (item: string, per: InventoryPeripheral) => {
-    for(const [k, v] of pairs(per.list())) {
-        if(v.name === item) {
-            return k
-        }
-    }
-    return -1
-}
 
 function main() {
     while(true) {
