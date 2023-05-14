@@ -1,10 +1,12 @@
 import { findSlot } from "./lib"
 import splits from "./modules/splits"
 import railcraft from "./modules/rail_craft"
+import quarry from "./modules/quarry"
 
 const programs = {
     "railcraft": railcraft,
-    "splits": splits
+    "splits": splits,
+    "quarry": quarry
 }
 
 print("What program would you like to run?")
